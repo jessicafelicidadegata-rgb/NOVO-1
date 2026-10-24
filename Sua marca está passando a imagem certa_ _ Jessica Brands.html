@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sua marca está passando a imagem certa? | Jessica Brands</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400&display=swap">
+<style>
+:root{--bg:#33201a;--bg2:#412a21;--ink:#f5efea;--mut:#c9b8ad;--line:rgba(245,239,234,.2);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Jost","Helvetica Neue",Arial,sans-serif;font-weight:300;line-height:1.6;position:relative;overflow-x:hidden}
+body::after{content:"brands";position:fixed;left:-5%;bottom:-9%;white-space:nowrap;font:italic 300 clamp(190px,46vw,460px)/1 "Cormorant Garamond",Georgia,serif;color:var(--bg2);opacity:1;pointer-events:none;z-index:0}
+main{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:36px 22px 60px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;letter-spacing:.32em;text-transform:uppercase;text-align:center;font-size:20px;margin-bottom:44px}
+h1,h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;line-height:1.15;margin:0 0 16px}
+h1{font-size:clamp(34px,8vw,52px);text-align:center}
+h2{font-size:clamp(26px,6vw,34px)}
+p{margin:0 0 16px;color:var(--mut)}
+.c{text-align:center}
+.btn{display:inline-block;background:transparent;color:var(--ink);border:1px solid var(--ink);padding:14px 26px;font:400 14px "Jost",sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:.2s}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.opt{display:block;width:100%;text-align:left;margin-bottom:12px;letter-spacing:.02em;text-transform:none;font-size:16px;padding:16px 18px}
+.bar{height:2px;background:var(--line);margin-bottom:10px}
+.bar i{display:block;height:100%;background:var(--ink);transition:width .3s}
+.tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-bottom:22px}
+.score{font:300 72px/1 "Cormorant Garamond",Georgia,serif;text-align:center}
+.score small{font-size:28px;color:var(--mut)}
+.card{border:1px solid var(--line);padding:20px;margin-bottom:14px;background:rgba(51,32,26,.85)}
+.card h3{font:400 22px "Cormorant Garamond",Georgia,serif;margin:0 0 6px;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.card h3 span{font:300 12px "Jost",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
+.card p{margin:8px 0 0}
+.m{height:3px;background:var(--line)}
+.m i{display:block;height:100%;background:var(--ink)}
+.cta{border:1px solid var(--ink);padding:28px 22px;margin-top:30px;text-align:center}
+.cta b{font-weight:400;color:var(--ink)}
+.hid{display:none}
+.card ul{margin:0;padding-left:18px;color:var(--mut)}.card li{margin-bottom:9px}.card li b{font-weight:400;color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+<div class="logo">Jessica Brands</div>
+
+<section id="intro" class="c">
+<h1>Sua marca está passando a imagem certa?</h1>
+<p>São 20 perguntinhas rápidas, uns 5 minutos. No final você descobre onde sua identidade visual está brilhando e onde ela está te custando clientes.</p>
+<p>Responda com sinceridade, ninguém está vendo. 🤎</p>
+<button class="btn" id="go">Começar o diagnóstico</button>
+</section>
+
+<section id="quiz" class="hid">
+<div class="bar"><i id="pb" style="width:0"></i></div>
+<div class="tag" id="tg"></div>
+<h2 id="qt"></h2>
+<div id="ops"></div>
+</section>
+
+<section id="res" class="hid"></section>
+</main>
+
+<script>
+var WHATS = "5573991220288";
+var P = [
+{n:"Logo",q:[
+["Seu logo continua legível em tamanho pequeno, como na foto de perfil?",["Sim, sempre","Mais ou menos","Não, perde os detalhes"]],
+["Você tem versões do logo para fundo claro e escuro?",["Sim, as duas","Só uma","Nem tenho"]],
+["Seu logo passa o que você faz ou o jeito que atende?",["Sim, bem claro","Em parte","Não sei ou acho que não"]],
+["Nos últimos 12 meses, você trocou ou refez o logo por insegurança?",["Não","Uma vez","Várias vezes"]]],
+r:["Seu logo ainda está pedindo socorro: ou some em tamanho pequeno, ou não conversa com o que você faz. A boa notícia é que dá pra resolver. O primeiro passo é redesenhá-lo, já com versões para fundo claro e escuro.","Você tem uma boa base, mas ela escorrega em alguns lugares. Teste o logo na foto de perfil e no fundo escuro e ajuste o que sumir.","Seu logo está cumprindo o papel: legível, versátil e com a sua cara. É só manter sempre as mesmas versões."],a:["Teste o logo no tamanho da foto de perfil. Se perder detalhe, peça uma versão simplificada (só símbolo ou monograma) para usar em tamanho pequeno.","Monte duas versões do logo, uma para fundo claro e outra para fundo escuro, e salve as duas em PNG transparente na mesma pasta.","Escreva em uma frase o que sua marca faz e como ela atende, e confira se o logo passa isso (formas, estilo, tom). Se não passar, é sinal de redesenho.","Pare de trocar o logo por impulso: defina a identidade completa primeiro (logo, cores e fontes) e só depois publique. Marca firme é marca que não muda toda hora."]},
+{n:"Cores e tipografia",q:[
+["Você tem uma paleta de cores definida e fixa?",["Sim, até anotada","Tenho uma ideia, mas varia","Não"]],
+["Suas cores aparecem em todos os posts e materiais?",["Sempre","Às vezes","Raramente"]],
+["Você usa no máximo 2 fontes nos seus materiais?",["Sim","Uso umas 3","Uso várias, sem regra"]],
+["Seus textos são fáceis de ler em posts e stories?",["Sim","Alguns sim, outros não","Muitas vezes é difícil"]]],
+r:["Hoje cada post parece falar uma língua diferente, e sem cores e fontes fixas a marca não fica na memória de ninguém. Comece definindo 1 cor principal, 1 de apoio, 1 neutra e no máximo 2 fontes.","Você já tem uma direção, só falta transformá-la em regra. Anote a paleta e as fontes e use sempre, até nos stories feitos correndo.","Cores e fontes alinhadas fazem sua marca ser reconhecida antes mesmo de o seu nome aparecer."],a:["Escolha 1 cor principal, 1 de apoio e 1 neutra e anote os códigos (HEX) num bloco de notas ou no Canva.","Crie a paleta no Kit de Marca do Canva e comece todo post por ela, em vez de escolher a cor na hora.","Fique com 2 fontes: uma para títulos e outra para textos. Tire das suas artes qualquer outra.","Garanta contraste: texto claro em fundo escuro (ou o contrário) e tamanho que dê para ler no celular sem esforço."]},
+{n:"Consistência no perfil",q:[
+["Quando alguém olha seu feed, parece uma marca só?",["Sim","Mais ou menos","Parecem vários perfis misturados"]],
+["Suas capas e templates seguem um padrão?",["Sim, tenho modelos","Tenho alguns","Faço do zero toda vez"]],
+["Bio e destaques combinam com o visual do feed?",["Sim","Parcialmente","Não"]],
+["Você mantém o padrão visual mesmo nos dias corridos?",["Sim","Às vezes perco","O padrão some quando aperta"]]],
+r:["Seu feed parece um mosaico de várias marcas, e quem passa por ele não grava quem você é. Criar modelos fixos de capa e post resolve boa parte disso.","Tem hora que o feed brilha e tem hora que escapa. Dois ou três modelos fixos de post já seguram o padrão nos dias corridos.","Seu perfil tem unidade: quem entra entende que é uma marca só. Constância é meio caminho andado."],a:["Abra seu feed e separe os 9 últimos posts. Os que fogem do padrão mostram o que precisa ser fixo daqui pra frente.","Crie de 3 a 5 modelos de post (capa, texto, frase, carrossel) e use sempre eles.","Refaça os ícones dos destaques e a bio com as mesmas cores e fontes do feed.","Deixe os modelos prontos e salvos para os dias corridos. No aperto, você só troca o texto e o padrão se mantém."]},
+{n:"Imagens e vídeos",q:[
+["Suas fotos e vídeos seguem um estilo (luz, cenário, enquadramento)?",["Sim","Alguns","Cada um é de um jeito"]],
+["Você usa imagens de banco que não têm nada a ver com você?",["Nunca","Às vezes","Com frequência"]],
+["Seus vídeos têm abertura, legenda e visual padronizados?",["Sim","Parcialmente","Não"]],
+["As imagens do perfil mostram você e seu trabalho com profissionalismo?",["Sim","Em parte","Não"]]],
+r:["Suas imagens ainda não têm uma linguagem própria, e isso diminui a confiança de quem está te conhecendo. Definir um estilo de luz, cenário e enquadramento já muda o jogo.","As imagens são boas, só falta amarrar tudo num estilo único. Padronize abertura, legenda e tratamento dos vídeos.","Suas imagens e vídeos têm assinatura própria, e isso passa profissionalismo logo de cara."],a:["Defina um estilo: tipo de luz, cores do cenário e enquadramento. Use sempre o mesmo em fotos e vídeos.","Troque imagens de banco por fotos suas ou do seu trabalho. Se precisar de banco, escolha as que combinam com a sua paleta.","Padronize os vídeos: mesma abertura, mesma legenda (fonte e cor) e mesmo fechamento.","Faça uma sessão de fotos do seu trabalho e de você, com luz boa e fundo limpo, e use essas imagens como base do perfil."]},
+{n:"Posicionamento",q:[
+["Seu visual combina com o tipo de cliente que você quer atrair?",["Sim, bem claro","Em parte","Não sei ou acho que não"]],
+["Seu visual combina com o preço que você cobra?",["Sim","Às vezes parece mais barato","Parece bem mais simples que meu serviço"]],
+["Alguém que nunca viu seu trabalho entende em 5 segundos o que você faz?",["Sim","Talvez","Não"]],
+["Já ouviu um “achei que você fosse outra coisa” por causa da imagem?",["Nunca","Uma vez","Com frequência"]]],
+r:["Sua imagem hoje não conta o valor do que você entrega e pode estar afastando o cliente certo. Antes de qualquer detalhe, vale reposicionar o visual para o público e o preço que você quer atrair.","Seu visual está quase lá, mas às vezes parece menor que o seu serviço. Um ajuste de direção já alinha tudo.","Sua imagem está à altura do seu serviço e fala com o cliente certo."],a:["Descreva seu cliente ideal e escolha 3 palavras que a marca deve passar para ele (por exemplo: sofisticada, acolhedora, firme). Revise o visual a partir delas.","Compare seu perfil com o de quem cobra o mesmo que você ou mais. Anote o que eles transmitem que o seu ainda não transmite.","Deixe claro em 5 segundos: nome, o que você faz e para quem, na bio e na foto de perfil.","Mostre o resultado do seu trabalho no perfil (antes e depois, depoimentos) e alinhe o visual ao que você entrega, para ninguém se enganar sobre você."]}
+];
+var L = [
+["Marca em construção","Sua marca ainda não mostra o valor do seu trabalho. Isso não é falta de talento, é falta de base visual. E a boa notícia é que nessa fase cada ajuste rende muito."],
+["Marca em ajuste","Você já tem uma base, mas as inconsistências estão custando credibilidade. Com padrão e coerência, sua marca ganha cara de profissional."],
+["Marca forte","Sua identidade está bem construída. Agora é refinar os detalhes e manter o padrão para se destacar de quem faz o mesmo que você."]
+];
+var Q = [];
+P.forEach(function(p,i){p.q.forEach(function(x){Q.push({p:i,t:x[0],o:x[1]})})});
+var n = 0, sc = [0,0,0,0,0], ans = [];
+function $(id){return document.getElementById(id)}
+function show(id){["intro","quiz","res"].forEach(function(s){$(s).className=(s===id?"":"hid")+(s==="intro"?" c":"")});window.scrollTo(0,0)}
+function ask(){
+ var q = Q[n];
+ $("pb").style.width = (n/Q.length*100)+"%";
+ $("tg").textContent = P[q.p].n+" · "+(n+1)+" de "+Q.length;
+ $("qt").textContent = q.t;
+ $("ops").innerHTML = "";
+ q.o.forEach(function(o,i){
+  var b = document.createElement("button");
+  b.className = "btn opt"; b.textContent = o;
+  b.onclick = function(){sc[q.p] += 2-i; ans[n] = i; n++; n<Q.length ? ask() : finish()};
+  $("ops").appendChild(b);
+ });
+}
+function lv(s){return s<=3?0:s<=6?1:2}
+function finish(){
+ var t = sc.reduce(function(a,b){return a+b},0);
+ var li = t<=15?0:t<=28?1:2;
+ var min = Math.min.apply(null,sc), wi = sc.indexOf(min);
+ var need = min<=3 || t<29;
+ var tags = ["Precisa de atenção","Quase lá","Forte"];
+ var h = '<p class="tag c">Seu diagnóstico</p><div class="score">'+t+'<small> / 40</small></div>';
+ h += '<h2 class="c" style="margin-top:12px">'+L[li][0]+'</h2><p class="c">'+L[li][1]+'</p>';
+ if(min<=6) h += '<p class="c"><b style="color:var(--ink);font-weight:400">Por onde começar:</b> '+P[wi].n.toLowerCase()+'. É onde sua marca mais está perdendo força hoje.</p>';
+ h += '<div style="margin-top:28px">';
+ P.forEach(function(p,i){
+  var k = lv(sc[i]), ac = ""; p.q.forEach(function(x,j){if(ans[i*4+j]>0) ac += "<li>"+p.a[j]+"</li>"});
+  h += '<div class="card"><h3>'+p.n+'<span>'+tags[k]+'</span></h3><div class="m"><i style="width:'+(sc[i]/8*100)+'%"></i></div><p>'+p.r[k]+'</p>'+(ac ? '<p class="tag" style="margin:16px 0 8px">Como melhorar</p><ul>'+ac+'</ul>' : '<p>Nada a ajustar aqui. É só manter.</p>')+'</div>';
+ });
+ h += '</div>';
+ var ac2 = []; P.forEach(function(p,i){p.q.forEach(function(x,j){var a = ans[i*4+j]; if(a>0) ac2.push({s:sc[i],c:a,t:p.a[j],pn:p.n})})});
+ ac2.sort(function(x,y){return x.s-y.s || y.c-x.c});
+ if(ac2.length){
+  var ph = [["Dias 1 e 2","O que mais pesa"],["Dias 3 a 5","Arrumando a casa"],["Dias 6 e 7","Amarrando tudo"]], sz = Math.ceil(ac2.length/3);
+  h += '<h2 class="c" style="margin-top:34px">Seu plano de ação</h2><p class="c">Montado com as suas respostas: do que mais pesa ao ajuste fino, um passo de cada vez.</p>';
+  ph.forEach(function(f,x){var g = ac2.slice(x*sz,x*sz+sz); if(g.length) h += '<div class="card"><h3>'+f[0]+'<span>'+f[1]+'</span></h3><ul>'+g.map(function(a){return '<li><b>'+a.pn+':</b> '+a.t+'</li>'}).join('')+'</ul></div>'});
+ }
+ var msg = "Oi! Fiz o diagnóstico da Jessica Brands e tirei "+t+"/40 ("+L[li][0]+"). Quero saber mais sobre criar minha identidade visual.";
+ var link = "https://wa.me/"+WHATS+"?text="+encodeURIComponent(msg);
+ if(need){
+  h += '<div class="cta"><h2>Sua marca merece uma identidade consistente</h2><p>Pelo seu resultado, o caminho mais curto é criar (ou refazer) a identidade visual com quem entende do assunto. Se fizer com a gente, você ganha <b>10% de desconto</b>.</p><a class="btn" href="'+link+'" target="_blank" rel="noopener">Quero meus 10% de desconto</a></div>';
+ } else {
+  h += '<div class="cta"><h2>Quer lapidar ainda mais?</h2><p>Sua marca já está no caminho certo. Se quiser dar o próximo passo e refinar os detalhes, é só chamar a gente.</p><a class="btn" href="'+link+'" target="_blank" rel="noopener">Falar com a Jessica Brands</a></div>';
+ }
+ h += '<p class="c" style="margin-top:26px"><button class="btn" id="again">Refazer o diagnóstico</button></p>';
+ $("res").innerHTML = h;
+ $("again").onclick = function(){n=0;sc=[0,0,0,0,0];ans=[];show("quiz");ask()};
+ show("res");
+}
+$("go").onclick = function(){show("quiz");ask()};
+</script>
+</body>
+</html>
